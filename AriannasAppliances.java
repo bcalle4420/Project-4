@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class AriannasAppliances {
 
     public static void main(String[] args) throws IOException {
-        //defines Total Revenue for later use
+        //defines Total Revenue
         double totalRevenue = 0;
 
         //defines Scanner for user input
@@ -22,7 +22,7 @@ public class AriannasAppliances {
         //defines printer for Revenues.txt
         PrintWriter outputFile = new PrintWriter("Revenues.txt");
 
-        //for-loop to a max of 4 quarters
+        //for-loop to a max of 4 quarters to find data for each appliance
         for (int Quarter = 0; Quarter < 4; Quarter++) {
             System.out.print("Enter the Sales for 2024 Quarter " + (Quarter + 1));
 
@@ -46,7 +46,7 @@ public class AriannasAppliances {
             System.out.print("Ovens: ");
             Ovens = keyboard.nextInt();
 
-            //adds all user inputs for sales to the ___sales
+            //adds all user inputs for sales to the ___sales variable
             dishwasherSales += Dishwashers;
             washerSales += Washers;
             dryerSales += Dryers;
